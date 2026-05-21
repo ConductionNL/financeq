@@ -1,0 +1,8 @@
+{
+  "spec_slug": "tax-levy-management",
+  "title": "Tax & Levy Management \u2014 Shillinq",
+  "app": "financeq",
+  "repo": "https://github.com/ConductionNL/financeq",
+  "depends_on": [],
+  "issue": null
+}
