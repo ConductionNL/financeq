@@ -1,0 +1,8 @@
+{
+  "spec_slug": "pc-cyclus-workflow",
+  "title": "P&C-Cyclus Workflow (Planning & Control)",
+  "app": "financeq",
+  "repo": "https://github.com/ConductionNL/financeq",
+  "depends_on": [],
+  "issue": null
+}
