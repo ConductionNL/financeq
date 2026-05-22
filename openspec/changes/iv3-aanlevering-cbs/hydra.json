@@ -1,0 +1,8 @@
+{
+  "spec_slug": "iv3-aanlevering-cbs",
+  "title": "Iv3-Aanlevering CBS (Informatie voor Derden)",
+  "app": "financeq",
+  "repo": "https://github.com/ConductionNL/financeq",
+  "depends_on": [],
+  "issue": null
+}
