@@ -3,6 +3,17 @@ status: draft
 ---
 # P&C-Cyclus Workflow (Planning & Control)
 
+## Placement & Information Architecture
+
+**Placement type:** `WIDGET` — Widget shown on a dashboard or another page. Has no dedicated page of its own; renders inside an existing surface as a tile/panel/card.
+
+**Lives at:** cross-cutting (Begroting + Rapportage)
+
+**Rationale:** workflow status visible in both, not a menu  
+_Source: /tmp/ia-small5.md_
+
+> **Implementation note for builders:** Respect the placement above. Do not promote this spec to a top-level menu item, sub-page, or new route unless the placement type explicitly says so. If the placement is `DETAIL_TAB`, `WIDGET`, `ACTION`, `SETTING`, or `INFRA`, the feature must NOT introduce a new entry in the app sidebar. When in doubt, ask before creating a new top-level surface.
+
 ## Purpose
 
 The Planning & Control cyclus (P&C-cyclus) is the statutory annual rhythm by which every Dutch decentrale overheid — gemeenten, provincies, waterschappen, and gemeenschappelijke regelingen — plans, authorises, executes, monitors, and accounts for its finances. The cycle is anchored in the Gemeentewet (art. 186-213), the Provinciewet (art. 190-217), the Waterschapswet (art. 98-109a) and operationalised by the Besluit Begroting en Verantwoording provincies en gemeenten (BBV) and, for waterschappen, the Waterschapsbesluit. It produces a chain of documents — kadernota, voorjaarsnota, programmabegroting, bestuursrapportages (BERAP/MARAP), najaarsnota, and jaarrekening — each with its own statutory deadlines, mandatory deelnemers, and binding handoffs to college, raad, accountant, and toezichthouder (provincie or BZK).
