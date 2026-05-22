@@ -3,6 +3,17 @@ status: draft
 ---
 # Iv3-Aanlevering CBS (Informatie voor Derden)
 
+## Placement & Information Architecture
+
+**Placement type:** `SUB_PAGE` — Sub-page beneath a top-level menu entry. Renders as a page inside the parent surface (usually reachable via a router child route or a tab on the parent index page).
+
+**Lives at:** Rapportage > Iv3-aanlevering CBS
+
+**Rationale:** CBS submission  
+_Source: /tmp/ia-small5.md_
+
+> **Implementation note for builders:** Respect the placement above. Do not promote this spec to a top-level menu item, sub-page, or new route unless the placement type explicitly says so. If the placement is `DETAIL_TAB`, `WIDGET`, `ACTION`, `SETTING`, or `INFRA`, the feature must NOT introduce a new entry in the app sidebar. When in doubt, ask before creating a new top-level surface.
+
 ## Purpose
 
 Iv3 — Informatie voor derden — is the statutory quarterly financial reporting that every Dutch decentrale overheid (gemeenten, provincies, waterschappen, gemeenschappelijke regelingen) must deliver to the Centraal Bureau voor de Statistiek. The duty is anchored in the Wet financiering decentrale overheden (Wet Fido) art. 3 lid 4 and the Regeling informatie voor derden (RIV) and operationalised by the Iv3-richtlijnen issued jointly by CBS, ministerie van BZK, ministerie van Financiën, en commissie BBV. The data feeds into CBS-statistieken (statline), the EMU-saldi reports to the European Commission (ESA 2010 / EDP — excessive deficit procedure), and the macro-economic Houdbaarheidsraming of the CPB. Late or non-conforming aanleveringen trigger correspondence from BZK financieel toezicht and, in extremis, contribute to artikel 12 status escalations.
