@@ -3,6 +3,17 @@ status: draft
 ---
 # Driver-Based Forecasting
 
+## Placement & Information Architecture
+
+**Placement type:** `SUB_PAGE` — Sub-page beneath a top-level menu entry. Renders as a page inside the parent surface (usually reachable via a router child route or a tab on the parent index page).
+
+**Lives at:** Begroting > Driver-based forecast
+
+**Rationale:** forecasting belongs inside budget  
+_Source: /tmp/ia-small5.md_
+
+> **Implementation note for builders:** Respect the placement above. Do not promote this spec to a top-level menu item, sub-page, or new route unless the placement type explicitly says so. If the placement is `DETAIL_TAB`, `WIDGET`, `ACTION`, `SETTING`, or `INFRA`, the feature must NOT introduce a new entry in the app sidebar. When in doubt, ask before creating a new top-level surface.
+
 ## Purpose
 
 Driver-based forecasting predicts future costs and revenues from the *causal drivers* that produce them — number of inwoners, square metres of openbare ruimte, number of leerlingen in primair onderwijs, number of zorgvragers per zorgprofiel, kilometres of riolering, hectares groen — rather than from extrapolated time-series of historical financials. The technique has been standard in corporate FP&A (financial planning and analysis) for two decades and is increasingly mandated by accountancy guidance (NBA-handreiking 1108) for substantiating multi-year ramingen in the meerjarenraming of decentrale overheden. Yet most Dutch gemeenten, provincies, and waterschappen still produce their meerjarenraming via Excel sheets that apply an indexering-percentage to last year's number, or via traditional time-series tooling that cannot answer "what happens if we get 10% more inwoners in dit groeigebied".
