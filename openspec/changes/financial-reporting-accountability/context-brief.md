@@ -4,6 +4,17 @@
 **Spec:** financial-reporting-accountability
 **Platform:** Nextcloud + OpenRegister
 
+## Placement & Information Architecture
+
+**Placement type:** `TOP_MENU` — Top-level menu entry — this functionality earns its own item in the app's left-nav.
+
+**Lives at:** Rapportage
+
+**Rationale:** parent of all reports  
+_Source: /tmp/ia-small5.md_
+
+> **Implementation note for builders:** Respect the placement above. Do not promote this spec to a top-level menu item, sub-page, or new route unless the placement type explicitly says so. If the placement is `DETAIL_TAB`, `WIDGET`, `ACTION`, `SETTING`, or `INFRA`, the feature must NOT introduce a new entry in the app sidebar. When in doubt, ask before creating a new top-level surface.
+
 ## Features (90 total, sorted by market demand)
 
 ### Export annual report
