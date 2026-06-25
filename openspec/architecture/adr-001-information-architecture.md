@@ -90,7 +90,7 @@ surface that needs to ladder up financially:
 - Begroting writes it (Programmabegroting sub-page).
 - Rapportage joins on it for raads-rapportages and BERAP/MARAP.
 - planix consumes it (read-only) for project -> programma -> doel laddering.
-- mydash rolls it up for bestuurders.
+- launchpad rolls it up for bestuurders.
 
 Renaming a programma or changing a budgetcode propagates everywhere;
 no consumer is allowed to maintain its own copy. The tree lives in
@@ -140,7 +140,7 @@ daily flow.
 Reguliere medewerkers (begroter, treasurer, subsidiebeoordelaar,
 belastingmedewerker) see the five operational menus and do not see
 Beheer. Concerncontrollers see all six. Bestuurders typically consume
-via mydash and only drill into Rapportage. Menu visibility is wired
+via launchpad and only drill into Rapportage. Menu visibility is wired
 to persona, not to a raw permission bitmask, so a maker promoted to
 controller does not need a separate login.
 
@@ -156,7 +156,7 @@ controller does not need a separate login.
   a tiered spec to a top-level menu without an ADR amendment.
 - The BBV-programma-tree single-source rule prevents the most common
   rot mode in financial systems (programma renamed in budget, stale
-  copy used in rapportage) and gives planix and mydash a stable
+  copy used in rapportage) and gives planix and launchpad a stable
   read contract.
 - Iv3 and other aanleveringen stay deadline-driven and operational,
   not buried under admin; CBS deadlines are visible where the work
@@ -173,11 +173,11 @@ controller does not need a separate login.
   This is the deliberate trade-off for keeping the operational five
   narrow. Beheer is expected to use grouping sub-pages, not flat
   scroll.
-- Cross-app reads (planix, mydash) must respect financeq as the
+- Cross-app reads (planix, launchpad) must respect financeq as the
   authoritative writer of the BBV-tree; install-time deps and
   runtime contracts have to be specified per consumer (planix ADR
-  already covers this on the planix side; mydash boundary covered
-  by the existing "mydash must not depend on OR/openconnector at
+  already covers this on the planix side; launchpad boundary covered
+  by the existing "launchpad must not depend on OR/openconnector at
   install time" rule — it reads the tree via runtime GraphQL only).
 
 ### Neutral
